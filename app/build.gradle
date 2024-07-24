@@ -1,0 +1,85 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.jetbrains.kotlin.kapt)
+//    alias(libs.plugins.kotlinAndroidKsp)
+    alias(libs.plugins.hiltAndroid)
+    alias(libs.plugins.safeArgs)
+
+}
+
+apply from: '../shared_dependencies.gradle'
+
+android {
+    namespace 'com.gimnastiar.rmovie'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.gimnastiar.rmovie"
+        minSdk 28
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+//        exclude '/META-INF/gradle/incremental.annotation.processors'
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'mozilla/public-suffix-list.txt'
+        exclude 'kotlin/coroutines/coroutines.kotlin_builtins'
+        exclude 'kotlin/kotlin.kotlin_builtins'
+        exclude 'kotlin/reflect/reflect.kotlin_builtins'
+        exclude 'kotlin/collections/collections.kotlin_builtins'
+//        exclude 'xsd/catalog.xml'
+//        exclude 'META-INF/DEPENDENCIES'
+//        exclude 'org/xmlpull/v1/XmlPullParser'
+//        exclude 'org/xmlpull/v1/XmlPullParserException'
+//        exclude 'org/xmlpull/v1/XmlPullParserFactory'
+//        exclude 'org/xmlpull/v1/XmlSerializer'
+//        exclude("META-INF/DEPENDENCIES")
+//        exclude("META-INF/LICENSE")
+//        exclude("META-INF/LICENSE.txt")
+//        exclude("META-INF/license.txt")
+//        exclude("META-INF/NOTICE")
+//        exclude("META-INF/NOTICE.txt")
+//        exclude("META-INF/notice.txt")
+//        exclude("META-INF/ASL2.0")
+//        exclude("META-INF/*.kotlin_module")
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+    dynamicFeatures = [':favorite']
+}
+
+dependencies {
+
+    implementation project(":core")
+    implementation libs.androidx.activity
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+
+//    implementation(libs.androidx.navigation.safe.args)
+
+    //shimmer
+    implementation libs.facebook.shimmer
+}

@@ -1,0 +1,20 @@
+dependencies {
+    implementation(libs.appcompat)
+    implementation(libs.coreKtx)
+    implementation(libs.constraintlayout)
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit
+    androidTestImplementation libs.androidx.espresso.core
+
+    implementation(libs.cardview)
+    implementation(libs.recyclerview)
+    implementation(libs.material)
+    implementation(libs.glide)
+
+    // Dagger Hilt
+    implementation libs.hilt.android
+    kapt(libs.hilt.compiler)
+
+//    implementation(libs.androidx.navigation.safe.args)
+}

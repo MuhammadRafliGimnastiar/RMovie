@@ -1,0 +1,70 @@
+plugins {
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.jetbrains.kotlin.kapt)
+    alias(libs.plugins.hiltAndroid)
+}
+
+apply from: '../shared_dependencies.gradle'
+
+android {
+    namespace 'com.gimnastiar.core'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 28
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField "String", "API_URL", "\"https://api.themoviedb.org/3/\""
+        buildConfigField "String", "API_KEY", "\"360b8979d6ed636d9d233bdcaa9e3373\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        buildConfig = true
+        viewBinding = true
+    }
+//    packagingOptions {
+////        exclude 'kotlin/internal/internal.kotlin_builtins'
+//    }
+}
+
+dependencies {
+
+
+    // Room
+    api(libs.room.runtime)
+    kapt(libs.room.compiler)
+    implementation(libs.room.ktx)
+
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    api(libs.logging.interceptor)
+
+    // Coroutine
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+
+    // Lifecycle
+    api(libs.lifecycle.livedata.ktx)
+
+    // Activity and Fragment KTX
+    api(libs.activity.ktx)
+    api(libs.fragment.ktx)
+}
