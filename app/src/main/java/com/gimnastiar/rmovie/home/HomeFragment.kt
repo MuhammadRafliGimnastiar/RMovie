@@ -99,10 +99,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                     }
                     is Resource.Success -> {
                         isLoading(false)
-                        movie.data.let {
-                            adapter.submitList(it)
-                            adapterHorizontal.submitList(it)
-                            movieList = ArrayList(it)
+                        movie.data.let { dataMovie ->
+                            adapter.submitList(dataMovie)
+                            adapterHorizontal.submitList(dataMovie)
+                            movieList = dataMovie as ArrayList
                         }
                     }
 
