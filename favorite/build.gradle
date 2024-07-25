@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.jetbrains.kotlin.kapt)
     alias(libs.plugins.hiltAndroid)
-    id("com.google.devtools.ksp")
+//    id("com.google.devtools.ksp")
 
 }
 
@@ -21,7 +21,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -54,5 +54,5 @@ dependencies {
 
     implementation(libs.hilt.android)
     implementation libs.androidx.navigation.fragment.ktx
-    ksp(libs.hilt.compiler)
+    kapt(libs.hilt.compiler)
 }

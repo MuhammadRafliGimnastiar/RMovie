@@ -14,7 +14,7 @@ dependencies {
 
     // Dagger Hilt
     implementation libs.hilt.android
-    ksp(libs.hilt.compiler)
+    kapt(libs.hilt.compiler)
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
 
