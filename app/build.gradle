@@ -15,6 +15,9 @@ plugins {
 apply from: '../shared_dependencies.gradle'
 
 android {
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
     namespace 'com.gimnastiar.rmovie'
     compileSdk 34
 
@@ -58,21 +61,6 @@ android {
         exclude 'kotlin/kotlin.kotlin_builtins'
         exclude 'kotlin/reflect/reflect.kotlin_builtins'
         exclude 'kotlin/collections/collections.kotlin_builtins'
-//        exclude 'xsd/catalog.xml'
-//        exclude 'META-INF/DEPENDENCIES'
-//        exclude 'org/xmlpull/v1/XmlPullParser'
-//        exclude 'org/xmlpull/v1/XmlPullParserException'
-//        exclude 'org/xmlpull/v1/XmlPullParserFactory'
-//        exclude 'org/xmlpull/v1/XmlSerializer'
-//        exclude("META-INF/DEPENDENCIES")
-//        exclude("META-INF/LICENSE")
-//        exclude("META-INF/LICENSE.txt")
-//        exclude("META-INF/license.txt")
-//        exclude("META-INF/NOTICE")
-//        exclude("META-INF/NOTICE.txt")
-//        exclude("META-INF/notice.txt")
-//        exclude("META-INF/ASL2.0")
-//        exclude("META-INF/*.kotlin_module")
     }
 
     buildFeatures {
