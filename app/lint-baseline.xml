@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.5.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.5.0)" variant="all" version="8.5.0">
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    if (item.title.toLowerCase().contains(text.toLowerCase())) filteredList.add(item)"
+        errorLine2="                                   ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/gimnastiar/rmovie/home/HomeFragment.kt"
+            line="126"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead. For strings meant to be internal use `Locale.ROOT`, otherwise `Locale.getDefault()`."
+        errorLine1="                    if (item.title.toLowerCase().contains(text.toLowerCase())) filteredList.add(item)"
+        errorLine2="                                                               ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/gimnastiar/rmovie/home/HomeFragment.kt"
+            line="126"
+            column="64"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        message="`@id/tvTagline` is not a sibling in the same `ConstraintLayout`"
+        errorLine1="            app:layout_constraintTop_toBottomOf=&quot;@id/tvTagline&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/include_vote.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NotSibling"
+        message="`@id/tvPerTen` is not a sibling in the same `ConstraintLayout`"
+        errorLine1="                    app:layout_constraintEnd_toEndOf=&quot;@id/tvPerTen&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/include_vote.xml"
+            line="79"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SuspiciousIndentation"
+        message="Suspicious indentation: This is conditionally executed; expected it to be indented"
+        errorLine1="                for (item in movieList) {"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/gimnastiar/rmovie/home/HomeFragment.kt"
+            line="125"
+            column="17"/>
+        <location
+            file="src/main/java/com/gimnastiar/rmovie/home/HomeFragment.kt"
+            line="124"
+            column="17"
+            message="Previous statement here"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `enableOnBackInvokedCallback` is only used in API level 33 and higher (current min is 31)"
+        errorLine1="        android:enableOnBackInvokedCallback=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="11"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.dynamic-feature than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.dynamic-feature than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.dynamic-feature than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.library than 8.5.0 is available: 8.5.1"
+        errorLine1="agp = &quot;8.5.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.20 is available: 1.9.22"
+        errorLine1="kotlin = &quot;1.9.20&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.20 is available: 1.9.22"
+        errorLine1="kotlin = &quot;1.9.20&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.9.20 is available: 1.9.22"
+        errorLine1="kotlin = &quot;1.9.20&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity than 1.9.0 is available: 1.9.1"
+        errorLine1="activity = &quot;1.9.0&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.dagger:hilt-android than 2.48 is available: 2.48.1"
+        errorLine1="hiltVersion = &quot;2.48&quot;"
+        errorLine2="              ~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.dagger:hilt-android than 2.48 is available: 2.48.1"
+        errorLine1="hiltVersion = &quot;2.48&quot;"
+        errorLine2="              ~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.dagger:hilt-android than 2.48 is available: 2.48.1"
+        errorLine1="hiltVersion = &quot;2.48&quot;"
+        errorLine2="              ~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-core than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-core than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-core than 1.7.1 is available: 1.7.3"
+        errorLine1="kotlinCoroutines = &quot;1.7.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="25"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycle = &quot;2.8.3&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycle = &quot;2.8.3&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.8.3 is available: 2.8.4"
+        errorLine1="lifecycle = &quot;2.8.3&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.0 is available: 1.9.1"
+        errorLine1="activityKtx = &quot;1.9.0&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="28"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.0 is available: 1.9.1"
+        errorLine1="activityKtx = &quot;1.9.0&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="28"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.activity:activity-ktx than 1.9.0 is available: 1.9.1"
+        errorLine1="activityKtx = &quot;1.9.0&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="28"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.fragment:fragment-ktx than 1.8.1 is available: 1.8.2"
+        errorLine1="fragmentKtx = &quot;1.8.1&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="29"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.fragment:fragment-ktx than 1.8.1 is available: 1.8.2"
+        errorLine1="fragmentKtx = &quot;1.8.1&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="29"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.fragment:fragment-ktx than 1.8.1 is available: 1.8.2"
+        errorLine1="fragmentKtx = &quot;1.8.1&quot;"
+        errorLine2="              ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="29"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="androidx-core-ktx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="37"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="androidx-core-ktx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="37"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="androidx-core-ktx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="37"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="androidx-appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="41"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="androidx-appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="41"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="androidx-appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="41"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="44"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="44"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="androidx-constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="44"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="46"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="46"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.appcompat:appcompat but with different version"
+        errorLine1="appcompat = { group = &quot;androidx.appcompat&quot;, name = &quot;appcompat&quot;, version.ref = &quot;appcompat&quot; }"
+        errorLine2="             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="46"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="coreKtx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="47"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="coreKtx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="47"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.core:core-ktx but with different version"
+        errorLine1="coreKtx = { group = &quot;androidx.core&quot;, name = &quot;core-ktx&quot;, version.ref = &quot;coreKtx&quot; }"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="47"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="48"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="48"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="SimilarGradleDependency"
+        message="There are multiple dependencies androidx.constraintlayout:constraintlayout but with different version"
+        errorLine1="constraintlayout = { group = &quot;androidx.constraintlayout&quot;, name = &quot;constraintlayout&quot;, version.ref = &quot;constraintlayout&quot; }"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="48"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="Repeated word &quot;leo&quot; in message: possible typo"
+        errorLine1="    &lt;string name=&quot;lorem&quot;>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum felis, eu iaculis magna. Fusce fermentum leo leo, imperdiet ullamcorper magna aliquam feugiat. Nam eget sapien eu metus porta laoreet. Nulla ut mi nec erat euismod elementum. In hac habitasse platea dictumst. Aenean accumsan sem et enim aliquet vulputate. In eget dolor ut lacus ultricies euismod. Nullam elit massa, accumsan quis viverra vitae, tristique at est. In egestas lectus urna, et varius lorem facilisis sed. Maecenas diam turpis, luctus a maximus id, porttitor quis ex. Etiam in metus ac mauris convallis fermentum nec sed velit. Proin lorem tellus, faucibus sed leo at, faucibus blandit orci. Phasellus imperdiet velit et leo consectetur sollicitudin. Aliquam neque elit, posuere at est sit amet, mollis sagittis diam. Praesent efficitur, nunc sed porta cursus, neque metus placerat libero, quis malesuada lorem neque et dolor. Nullam euismod suscipit quam, nec sodales sapien lobortis et. Nullam ultricies ante enim, quis hendrerit neque auctor sit amet. Nunc magna est, pharetra id hendrerit nec, sollicitudin id eros. Nulla magna sapien, euismod id turpis nec, posuere laoreet nunc. Phasellus vestibulum pharetra sapien ut aliquet. Aliquam dignissim sed purus convallis elementum. Curabitur volutpat eros a purus facilisis porttitor. Proin vestibulum dictum sapien, non hendrerit lorem vestibulum in. Donec convallis, nibh in egestas semper, purus ante feugiat leo, vitae facilisis purus ex sit amet nulla. Sed ornare nulla a felis interdum ultricies. Nunc vestibulum sodales mollis. Nullam ac turpis eget erat finibus fermentum at ac sapien. Cras eget mauris molestie, pretium ex sed, tempus diam. Morbi vel mattis nulla. Pellentesque nec mattis tortor. Mauris tempus consequat justo ut dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada arcu turpis, non semper augue commodo vel. Fusce finibus ipsum in mollis pellentesque. Aliquam luctus tellus ante, eget viverra mi aliquet id. Donec congue leo molestie ante aliquam dictum. Pellentesque eros nisi, volutpat a pretium in, luctus ut lacus. Etiam porta, nisl eu sodales posuere, erat libero imperdiet leo, non auctor nulla elit ultricies risus. Vestibulum rhoncus condimentum justo. Mauris mattis velit sit amet tortor accumsan, vel congue orci sagittis. Donec sed vestibulum sem. Curabitur porttitor neque vitae consectetur eleifend. Pellentesque quis interdum tortor. Vivamus malesuada, ex ac consectetur feugiat, nunc odio suscipit nisl, et fringilla orci ex quis dolor. Nulla vitae tempor lectus. Cras lacus lectus, interdum sed purus imperdiet, egestas volutpat nunc.&lt;/string>"
+        errorLine2="                                                                                                                                            ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="5"
+            column="141"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1709 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M73.47,35.48C70.68,35.48 68.58,34.75 67.17,33.3C65.78,31.85 65.09,29.69 65.09,26.81C65.09,23.67 65.79,21.45 67.2,20.15C68.61,18.83 70.7,18.17 73.47,18.17C75.31,18.17 76.85,18.47 78.11,19.06C79.37,19.64 80.32,20.57 80.96,21.85C81.62,23.11 81.95,24.76 81.95,26.81C81.95,29.67 81.22,31.83 79.74,33.3C78.29,34.75 76.2,35.48 73.47,35.48ZM73.47,31.29C74.15,31.29 74.73,31.13 75.2,30.81C75.69,30.49 76.06,30 76.32,29.34C76.58,28.65 76.7,27.81 76.7,26.81C76.7,25.61 76.58,24.7 76.32,24.06C76.06,23.39 75.69,22.94 75.2,22.68C74.73,22.42 74.15,22.3 73.47,22.3C72.77,22.3 72.18,22.43 71.71,22.71C71.24,22.97 70.89,23.43 70.66,24.09C70.44,24.73 70.34,25.63 70.34,26.81C70.34,28.37 70.59,29.51 71.1,30.23C71.62,30.94 72.41,31.29 73.47,31.29ZM89.46,35L82.7,18.78H88.43L93.17,30.94H91.86L95.89,18.78H101.52L94.77,35H89.46ZM104.3,35V19.03H109.61L109.64,35H104.3ZM104.24,16.7V12.76H109.68V16.7H104.24ZM121.19,35.48C119.53,35.48 118.06,35.15 116.78,34.49C115.52,33.81 114.54,32.85 113.83,31.61C113.13,30.35 112.78,28.87 112.78,27.16C112.78,24.32 113.49,22.11 114.92,20.54C116.35,18.96 118.41,18.17 121.1,18.17C122.89,18.17 124.34,18.55 125.45,19.32C126.56,20.09 127.38,21.23 127.91,22.74C128.45,24.26 128.7,26.11 128.68,28.31H116.46L115.82,25.08H124.2L123.56,26.81C123.54,25.08 123.31,23.87 122.89,23.19C122.48,22.49 121.8,22.14 120.84,22.14C120.33,22.14 119.86,22.29 119.43,22.58C119,22.86 118.66,23.32 118.41,23.96C118.17,24.6 118.06,25.46 118.06,26.55C118.06,28.02 118.4,29.15 119.08,29.94C119.78,30.71 120.94,31.1 122.54,31.1C123.11,31.1 123.69,31.03 124.26,30.9C124.84,30.75 125.37,30.58 125.86,30.39C126.35,30.2 126.77,30.05 127.11,29.94V34.42C126.36,34.7 125.51,34.95 124.55,35.16C123.61,35.37 122.49,35.48 121.19,35.48Z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/logo_app.xml"
+            line="10"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1709 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector."
+        errorLine1="      android:pathData=&quot;M73.47,35.48C70.68,35.48 68.58,34.75 67.17,33.3C65.78,31.85 65.09,29.69 65.09,26.81C65.09,23.67 65.79,21.45 67.2,20.15C68.61,18.83 70.7,18.17 73.47,18.17C75.31,18.17 76.85,18.47 78.11,19.06C79.37,19.64 80.32,20.57 80.96,21.85C81.62,23.11 81.95,24.76 81.95,26.81C81.95,29.67 81.22,31.83 79.74,33.3C78.29,34.75 76.2,35.48 73.47,35.48ZM73.47,31.29C74.15,31.29 74.73,31.13 75.2,30.81C75.69,30.49 76.06,30 76.32,29.34C76.58,28.65 76.7,27.81 76.7,26.81C76.7,25.61 76.58,24.7 76.32,24.06C76.06,23.39 75.69,22.94 75.2,22.68C74.73,22.42 74.15,22.3 73.47,22.3C72.77,22.3 72.18,22.43 71.71,22.71C71.24,22.97 70.89,23.43 70.66,24.09C70.44,24.73 70.34,25.63 70.34,26.81C70.34,28.37 70.59,29.51 71.1,30.23C71.62,30.94 72.41,31.29 73.47,31.29ZM89.46,35L82.7,18.78H88.43L93.17,30.94H91.86L95.89,18.78H101.52L94.77,35H89.46ZM104.3,35V19.03H109.61L109.64,35H104.3ZM104.24,16.7V12.76H109.68V16.7H104.24ZM121.19,35.48C119.53,35.48 118.06,35.15 116.78,34.49C115.52,33.81 114.54,32.85 113.83,31.61C113.13,30.35 112.78,28.87 112.78,27.16C112.78,24.32 113.49,22.11 114.92,20.54C116.35,18.96 118.41,18.17 121.1,18.17C122.89,18.17 124.34,18.55 125.45,19.32C126.56,20.09 127.38,21.23 127.91,22.74C128.45,24.26 128.7,26.11 128.68,28.31H116.46L115.82,25.08H124.2L123.56,26.81C123.54,25.08 123.31,23.87 122.89,23.19C122.48,22.49 121.8,22.14 120.84,22.14C120.33,22.14 119.86,22.29 119.43,22.58C119,22.86 118.66,23.32 118.41,23.96C118.17,24.6 118.06,25.46 118.06,26.55C118.06,28.02 118.4,29.15 119.08,29.94C119.78,30.71 120.94,31.1 122.54,31.1C123.11,31.1 123.69,31.03 124.26,30.9C124.84,30.75 125.37,30.58 125.86,30.39C126.35,30.2 126.77,30.05 127.11,29.94V34.42C126.36,34.7 125.51,34.95 124.55,35.16C123.61,35.37 122.49,35.48 121.19,35.48Z&quot;"
+        errorLine2="                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/drawable/logo_app_dark.xml"
+            line="10"
+            column="25"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;black&quot;>#FF000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher` appears to be unused">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_background` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.ic_launcher_foreground` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/ic_launcher_foreground.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.mipmap.ic_launcher_round` appears to be unused">
+        <location
+            file="src/main/res/mipmap-hdpi/ic_launcher_round.webp"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.include_vote` appears to be unused"
+        errorLine1="&lt;androidx.cardview.widget.CardView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/include_vote.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.logo_app_dark` appears to be unused"
+        errorLine1="&lt;vector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/logo_app_dark.xml"
+            line="1"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_blank_fragment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hello_blank_fragment&quot;>Hello blank fragment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="${:favorite*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="3"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.hello_blank_fragment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;hello_blank_fragment&quot;>Hello blank fragment&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.lorem` appears to be unused"
+        errorLine1="    &lt;string name=&quot;lorem&quot;>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec rutrum felis, eu iaculis magna. Fusce fermentum leo leo, imperdiet ullamcorper magna aliquam feugiat. Nam eget sapien eu metus porta laoreet. Nulla ut mi nec erat euismod elementum. In hac habitasse platea dictumst. Aenean accumsan sem et enim aliquet vulputate. In eget dolor ut lacus ultricies euismod. Nullam elit massa, accumsan quis viverra vitae, tristique at est. In egestas lectus urna, et varius lorem facilisis sed. Maecenas diam turpis, luctus a maximus id, porttitor quis ex. Etiam in metus ac mauris convallis fermentum nec sed velit. Proin lorem tellus, faucibus sed leo at, faucibus blandit orci. Phasellus imperdiet velit et leo consectetur sollicitudin. Aliquam neque elit, posuere at est sit amet, mollis sagittis diam. Praesent efficitur, nunc sed porta cursus, neque metus placerat libero, quis malesuada lorem neque et dolor. Nullam euismod suscipit quam, nec sodales sapien lobortis et. Nullam ultricies ante enim, quis hendrerit neque auctor sit amet. Nunc magna est, pharetra id hendrerit nec, sollicitudin id eros. Nulla magna sapien, euismod id turpis nec, posuere laoreet nunc. Phasellus vestibulum pharetra sapien ut aliquet. Aliquam dignissim sed purus convallis elementum. Curabitur volutpat eros a purus facilisis porttitor. Proin vestibulum dictum sapien, non hendrerit lorem vestibulum in. Donec convallis, nibh in egestas semper, purus ante feugiat leo, vitae facilisis purus ex sit amet nulla. Sed ornare nulla a felis interdum ultricies. Nunc vestibulum sodales mollis. Nullam ac turpis eget erat finibus fermentum at ac sapien. Cras eget mauris molestie, pretium ex sed, tempus diam. Morbi vel mattis nulla. Pellentesque nec mattis tortor. Mauris tempus consequat justo ut dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada arcu turpis, non semper augue commodo vel. Fusce finibus ipsum in mollis pellentesque. Aliquam luctus tellus ante, eget viverra mi aliquet id. Donec congue leo molestie ante aliquam dictum. Pellentesque eros nisi, volutpat a pretium in, luctus ut lacus. Etiam porta, nisl eu sodales posuere, erat libero imperdiet leo, non auctor nulla elit ultricies risus. Vestibulum rhoncus condimentum justo. Mauris mattis velit sit amet tortor accumsan, vel congue orci sagittis. Donec sed vestibulum sem. Curabitur porttitor neque vitae consectetur eleifend. Pellentesque quis interdum tortor. Vivamus malesuada, ex ac consectetur feugiat, nunc odio suscipit nisl, et fringilla orci ex quis dolor. Nulla vitae tempor lectus. Cras lacus lectus, interdum sed purus imperdiet, egestas volutpat nunc.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;com.google.android.material.floatingactionbutton.FloatingActionButton"
+        errorLine2="                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_movie.xml"
+            line="93"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                        &lt;ImageView"
+        errorLine2="                         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_movie.xml"
+            line="185"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/include_vote.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Other Movies&quot;, should use `@string` resource"
+        errorLine1="                    android:text=&quot;Other Movies&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_movie.xml"
+            line="273"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Tidak ada Movie Favorite&quot;, should use `@string` resource"
+        errorLine1="                android:text=&quot;Tidak ada Movie Favorite&quot;/>"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_favorite.xml"
+            line="25"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Favorite Button&quot;, should use `@string` resource"
+        errorLine1="        android:contentDescription=&quot;Favorite Button&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/menu/search_menu.xml"
+            line="7"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="                    android:paddingStart=&quot;16dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_detail_movie.xml"
+            line="285"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="                    android:paddingStart=&quot;8dp&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="40"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="RtlEnabled"
+        message="The project references RTL attributes, but does not explicitly enable or disable RTL support with `android:supportsRtl` in the manifest">
+        <location
+            file="src/main/AndroidManifest.xml"/>
+    </issue>
+
+</issues>
