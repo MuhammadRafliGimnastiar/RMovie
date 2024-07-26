@@ -74,4 +74,7 @@ dependencies {
     // Activity and Fragment KTX
     api(libs.activity.ktx)
     api(libs.fragment.ktx)
+
+    implementation "net.zetetic:android-database-sqlcipher:4.4.0"
+    implementation "androidx.sqlite:sqlite-ktx:2.1.0"
 }
